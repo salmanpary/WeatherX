@@ -9,7 +9,7 @@ const forecast=(latitude,longitude,callback)=>{
             callback('no such location api',undefined)
         }
         else{
-            callback(undefined,"it is currently "+body.current.temperature+"there is"+body.current.precip+"chance")
+            callback(undefined,"it is currently "+body.current.temperature+"degree celsius and "+"there is"+body.current.precip+"chance for precipitation")
             
 
         }
