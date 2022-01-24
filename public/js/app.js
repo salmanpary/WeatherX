@@ -12,7 +12,7 @@ weatherform.addEventListener('click',(e)=>{
     const location=search.value
     console.log(location)
     console.log('testing')
-    fetch('http://localhost:3000/weather?address='+location).then((response)=>{
+    fetch('/weather?address='+location).then((response)=>{
     return response.json()
 }).then((data)=>{
     if(data.error){

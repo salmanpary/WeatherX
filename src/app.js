@@ -11,6 +11,7 @@ const partialspath=path.join(__dirname,'../templates/partials')
 // const aboutdirpath=path.join(__dirname,'../public/about.html')
 // const helpdirpath=path.join(__dirname,'../public/help.html')
 const app = express()
+const port=process.env.PORT ||3000
 app.use(express.static(publicdirpath))
 
 app.set('view engine','hbs')//setup handle bar
@@ -108,6 +109,6 @@ app.get('*',(req,res)=>{
 
 
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.')
+app.listen(port, () => {
+    console.log('Server is up on port '+port)
 })
