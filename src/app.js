@@ -20,22 +20,22 @@ hbs.registerPartials(partialspath)
 app.get('',(req,res)=>{
     res.render('index',{
         title:'Weatherx',
-        name:"freak",
+        name:"salman pary",
         age:17
     })
 })
 app.get('/about',(req,res)=>{
     res.render('about',{
         title:'chathan',
-        name:'shuresh',
+        name:'salman pary',
         age:10
     })
 
 })
 app.get('/help',(req,res)=>{
     res.render('help',{
-        title:'help me get out',
-        name:'maathaparan',
+        title:'help ',
+        name:'salman pary',
         age:56
     })
 })
